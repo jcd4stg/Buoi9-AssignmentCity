@@ -37,8 +37,7 @@ class Detail_ViewController: UIViewController, UITableViewDelegate, UITableViewD
         let manHinh1 = self.navigationController?.viewControllers[0] as! ViewController
         manHinh1.detailedLbl.text = arrDetail[indexPath.row]
         
-        self.navigationController?.popViewController(animated: true)
-        
+        self.navigationController?.popToViewController(manHinh1, animated: true)
         
     }
 }

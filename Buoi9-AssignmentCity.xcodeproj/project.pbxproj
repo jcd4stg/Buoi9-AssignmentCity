@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE823C0E2AC5C98B00F8F42D /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE823C0D2AC5C98B00F8F42D /* File.swift */; };
 		CEED4FB52AB6F7640037AADA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEED4FB42AB6F7640037AADA /* AppDelegate.swift */; };
 		CEED4FB72AB6F7640037AADA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEED4FB62AB6F7640037AADA /* SceneDelegate.swift */; };
 		CEED4FB92AB6F7640037AADA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEED4FB82AB6F7640037AADA /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE823C0D2AC5C98B00F8F42D /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		CEED4FB12AB6F7640037AADA /* Buoi9-AssignmentCity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Buoi9-AssignmentCity.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEED4FB42AB6F7640037AADA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEED4FB62AB6F7640037AADA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 				CEED4FCA2AB6F9BB0037AADA /* DETAIL_TableViewCell.swift */,
 				CEED4FB62AB6F7640037AADA /* SceneDelegate.swift */,
 				CEED4FB82AB6F7640037AADA /* ViewController.swift */,
+				CE823C0D2AC5C98B00F8F42D /* File.swift */,
 				CEED4FBA2AB6F7640037AADA /* Main.storyboard */,
 				CEED4FBD2AB6F7670037AADA /* Assets.xcassets */,
 				CEED4FBF2AB6F7670037AADA /* LaunchScreen.storyboard */,
@@ -145,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEED4FB92AB6F7640037AADA /* ViewController.swift in Sources */,
+				CE823C0E2AC5C98B00F8F42D /* File.swift in Sources */,
 				CEED4FCB2AB6F9BB0037AADA /* DETAIL_TableViewCell.swift in Sources */,
 				CEED4FB52AB6F7640037AADA /* AppDelegate.swift in Sources */,
 				CEED4FB72AB6F7640037AADA /* SceneDelegate.swift in Sources */,

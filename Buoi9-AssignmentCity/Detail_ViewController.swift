@@ -12,6 +12,8 @@ class Detail_ViewController: UIViewController, UITableViewDelegate, UITableViewD
     @IBOutlet weak var tbvDetail: UITableView!
     var arrDetail: [String]!
     
+    var delegate: DetailToVC_Delegate?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tbvDetail.delegate = self
@@ -34,10 +36,13 @@ class Detail_ViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let manHinh1 = self.navigationController?.viewControllers[0] as! ViewController
-        manHinh1.detailedLbl.text = arrDetail[indexPath.row]
+//        let manHinh1 = self.navigationController?.viewControllers[0] as! ViewController
+//        manHinh1.detailedLbl.text = arrDetail[indexPath.row]
         
-        self.navigationController?.popToViewController(manHinh1, animated: true)
+//        self.navigationController?.popToViewController(manHinh1, animated: true)
+        
+        delegate?.solveText(txtContent: arrDetail[indexPath.row])
+        self.navigationController?.popToRootViewController(animated: true)
         
     }
 }

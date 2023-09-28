@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, DetailToVC_Delegate {
 
     
     @IBOutlet weak var detailedLbl: UILabel!
@@ -16,9 +16,14 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     }
 
+    func solveText(txtContent: String) {
+        detailedLbl.text = txtContent
+    }
+    
     @IBAction func cityBtn(_ sender: Any) {
         let sb = UIStoryboard(name: "Main", bundle: nil)
         let detailVC = sb.instantiateViewController(withIdentifier: "DETAIL") as! Detail_ViewController
+        detailVC.delegate = self
         
         self.navigationController?.pushViewController(detailVC, animated: true)
     }
